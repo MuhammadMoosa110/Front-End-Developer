@@ -1,0 +1,1500 @@
+/* /STYLE/ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Header {
+    display: flex;
+    overflow: none;
+    align-items: start;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 40%;
+    top: -2px;
+    left: 30%;
+    height: 5vh;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Header .AnimatedBar {
+    width: 5rem;
+    height: 60px;
+    display: none;
+    position: absolute;
+    right: 74rem;
+    top: 2rem;
+}
+
+/* EXTRA */
+.AnimatedBar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.animeLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 50px;
+}
+
+.animeLines div {
+    width: 100%;
+    height: 6px;
+    background-color: turquoise;
+    color: #ff0000;
+    /* Adjust color as needed */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.AnimatedBar:hover .line1 {
+    transform: translateY(-5px) rotate(-0deg);
+    background-color: #007BFF;
+    /* Adjust hover color */
+}
+
+.AnimatedBar:hover .line2 {
+    opacity: 0;
+    /* Hide the middle line */
+}
+
+.AnimatedBar:hover .line3 {
+    transform: translateY(10px) rotate(0deg);
+    background-color: #007BFF;
+    /* Adjust hover color */
+}
+
+/* ...existing code... */
+/* EXTRA END */
+.Header .AnimatedBar .line1 {
+    width: 55%;
+    height: 0.3vmax;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .AnimatedBar .line2 {
+    width: 70%;
+    margin-top: 5px;
+    height: 0.4vmax;
+    margin-left: 2px;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .AnimatedBar .line3 {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 12px;
+    height: 0.3vmax;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .NavLink a:hover {
+    text-shadow: 0px 0px 2px rgb(140, 0, 255);
+
+}
+
+.Header .NavLink {
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Header .NavLink a {
+    font-size: 1vmax;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15%;
+
+}
+
+.Header h1 {
+    margin-left: 12px;
+    color: whitesmoke;
+    font-family:"poppins";
+    margin: 10px 50px 10px 50px;
+
+    text-align: start;
+    align-items: center;
+    font-size: 2vmax;
+    width: 100%;
+    border-radius: 1px;
+
+
+}
+
+.page1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+        background: linear-gradient(to right, #333 30%, #c0c0c0 70%);
+    background: conic-gradient(from 90deg at center, #000000, #333 30%, #000 70%);
+    /* background-image: url('Assets/bg.jpg'); */
+    /* background: #000000;
+    background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 72%); */
+    z-index: -100;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.Glass {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: -2;
+    position: absolute;
+    mix-blend-mode: overlay;
+
+}
+
+.page1 .circle {
+    width: 1.8vmax;
+    height: 3%;
+    /* outline: 2px #fafafa solid; */
+    position: relative;
+    border-radius: 100%;
+    margin: 10px 0px 60px 50px;
+
+    box-shadow: -0px 0px 10px rgb(255, 255, 255);
+}
+
+.page1 .circle .InnerCircle {
+    width: 40%;
+    height: 40%;
+    outline: 2px #fafafa solid;
+    position: absolute;
+    top: 39px;
+    left: 10px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    margin-top: -30px;
+
+}
+
+.page1 .circle .InnerCircle:hover {
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -0px 0px 10px rgb(255, 0, 0);
+}
+
+.page1 .AnimeLine {
+    width: 4px;
+    height: 30vh;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: -0px 0px 10px rgb(255, 255, 255);
+
+}
+
+.page1 .page1-content {
+    display: flex;
+    gap: -200px;
+    margin: -10px;
+}
+
+.page1 .page1-content :nth-child(3) {
+    color: rebeccapurple;
+    outline: none;
+    margin-left: 20px;
+    -webkit-text-stroke: none;
+    cursor: pointer;
+}
+
+.page1 h1 {
+    margin-left: 6.7rem;
+    font-family: poppins,sans-serif;
+    color: whitesmoke;
+    font-size: 7vmax;
+    gap: 10px;
+    font-weight: 600;
+    width: 90%;
+    display: flex;
+    -webkit-text-stroke: #000 1px;
+    text-align: center;
+    margin-top: -10%;
+    text-align: start;
+}
+
+.page1 p {
+    margin-left: 7rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fafafa;
+    font-size: 1.5vmax;
+    -webkit-text-stroke: coral 0.1px;
+    text-align: start;
+    margin-top: 10px;
+    opacity: 2;
+}
+
+.page1 .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    left: 10%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.page2 {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    background-size: cover;
+    background: #19191a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.page1 .ListItems {
+    width: 85%;
+    height: 15%;
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    background: #fafafc1c;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 20px 40px rgba(255, 255, 255, 0.308);
+    z-index: 100;
+}
+
+.page2 .cards {
+    width: 99%;
+    height: 75%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    top: 145%;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+
+.page2 .cards .insideCards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    transform-style: preserve-3d;
+    perspective: -1000px;
+    position: relative;
+
+    transition: .15s ease-out;
+}
+
+.page2 .cards .insideCards .card1 {
+    width: 20%;
+    height: 60%;
+    
+    background: rgb(27, 27, 27);
+}
+
+.page2 .cards .insideCards .card2 {
+    width: 20%;
+    height: 60%;
+    background: rgb(27, 27, 27);
+}
+
+.page2 .cards .insideCards .card3 {
+    width: 20%;
+    height: 60%;
+    background: rgb(27, 27, 27);
+}
+.page2 .cards .insideCards .card3 h1:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    color: whitesmoke;
+    filter: drop-shadow(10px 4px 4px  #022436);
+}
+.page2 .cards .insideCards .card1 h1:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    color: whitesmoke;
+    filter: drop-shadow(-10px 4px 4px  #022436);
+}
+.page2 .cards .insideCards .card3 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    background: white;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+}
+.page2 .cards .insideCards .card2 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: black;
+    background: white;
+    width: 100%;
+    filter: drop-shadow(-1px -10px 10px  #022436);
+}
+.page2  .insideCards .card1 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    background: white;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+}
+
+.page2 .cards .insideCards .card1:hover {
+    text-decoration: #000 1px solid;
+    display: flex;
+    transform: rotateY(10deg) translateZ(10px);
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+
+.page2 .cards .insideCards .card2:hover {
+    transform: rotateY(10deg);
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+.page2 .cards .insideCards .card3:hover {
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+    transform: rotateY(-10deg);
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+.page2 .cards .insideCards .card1,
+.card2,
+.card3 {
+    outline: 2px solid #1a035a;
+    box-shadow: 0 0 10px #6200ff77, inset 0 0 10px #6f00ff77;
+    left: 1%;
+    top: 20%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.7s ease;
+
+}
+
+@keyframes lighting {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.page2 .overView {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+
+
+}
+.card3{
+display: grid;
+position: relative;
+    grid-template-rows: 5rem 1fr 1fr 1fr 1rem;
+    justify-content: center;
+}
+.card1 {
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr 1fr 1rem;
+    justify-content: center;
+}
+.page2 .cards .insideCards .card3 h1{
+    font-size: 2vmax;
+    position: absolute;
+    text-align: center;
+    color:rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    
+    height: 100vh;
+    grid-row: 1;
+}
+
+.page2 .cards .insideCards .card1 {
+    position: relative;
+}
+.page2 .icon {
+    opacity: 1;
+    width: 100%;
+    height: 25%;
+    color: whitesmoke;
+    position: absolute;
+    top: 20%;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2s ease-in-out;
+    left: 0;
+    z-index: -1;
+}
+.page2 .cards .insideCards .card1 h1{
+    font-size: 2vmax;
+    text-align: center;
+    grid-row: 1;
+     
+    z-index: 1;
+    align-items: center;
+    color:rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.page2 .cards .insideCards .card2 h4{
+    font-size: 1.5vmax;
+    width: 100%;
+    text-align: center;
+    top: 87%;
+    border-radius: 15px;
+    height: 15%;
+    color: rebeccapurple;
+    background: #000;
+    position: absolute;
+    background: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    z-index: -1;
+}
+.page2 .cards .insideCards h4{
+    font-size: 1vmax;
+    width: 100%;
+    text-align: center;
+    top: 82%;
+    height: 5%;
+    position: absolute;
+    z-index: 1;
+    color: #fafafc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    z-index: -1;
+}
+.page2 .overView .insideView {
+
+    width: 100%;
+    
+    text-align: start;
+    position: relative;
+    top: 5rem;
+
+}
+
+.page2 .overView h5 {
+    font-size: 1vmax;
+    color: whitesmoke;
+    justify-content: center;
+    padding-left: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    margin-top: -1rem;
+}
+
+.page2 .overView h1 {
+    color: whitesmoke;
+    padding-left: 2rem;
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+}
+
+.page2 .overView p {
+    padding-left: 2.5rem;
+    margin-top: 2rem;
+    color: whitesmoke;
+    font-size: 1.3vmax;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page2 .overView p:hover {
+    color: white;
+    text-shadow: 5px 20px 40px rgba(255, 255, 255, 0.308);
+}
+
+.page2 .tubelight {
+    width: 99%;
+    height: 5px;
+    background: #fafafa;
+    position: absolute;
+    margin-top: 22%;
+
+}
+
+.page2 .tubelight h1 {
+    color: #fafafa;
+    font-size: 4vmax;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1.5rem;
+}
+
+.page3 {
+    
+    width: 100%;
+    height: 100vh;
+    background: #19191a ;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    
+    
+}
+.page3 .logos{
+    width: 80%;
+    position: relative;
+    height: 20vh;
+    border-radius: 12px;
+    outline: 2px solid #6500ff;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.page3 .logos img{
+    position: absolute;
+    width: 10%;
+    height: 90%;
+    margin: 10px 0 10px 10px;
+}
+
+.page3 .logos .i1{
+    margin-left: 5%;
+}
+.page3 .logos .i2{
+    margin-left: 25%;
+}
+.page3 .logos .i3{
+    margin-left: 45%;
+}
+.page3 .logos .i4{
+    margin-left: 65%;
+}
+.page3 .logos .i5{
+    margin-left: 85%;
+}
+.page3 .work{
+    width: 100%;
+    height: 60%;
+    margin-top: 0%;
+    
+}
+.page3 h1{
+    color: whitesmoke;
+    font-size: 2.4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+    
+}
+.page3 .projects{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page3 .projects .project1,.project2,.project3{
+    width: 25%;
+    height: 60%;
+    text-align: center;
+    border-radius: 30px;
+    background: transparent;
+    outline: #6500ff 2px solid;
+    justify-content: center;
+    background: #19191a;
+    opacity: 0.8;
+    align-content: center;
+    
+}
+
+.page3 .projects .project1,.project2,.project3  a{
+    text-align: center;
+    
+    width: 10%;
+    height: 10%;
+    color: #c0c0c0;
+    
+}
+.page3 .projects .project3 img{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    object-fit: cover;
+}
+.page3 .projects .project3 {
+    position: relative;
+}
+.page3 .projects .project3  a{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #c0c0c0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page3 .projects .project3:hover{
+    background: rgb(198, 248, 248);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2s all;
+}
+.lamp{
+    width: 100%;
+    height: 5px;
+    background: #6500ff;
+    
+    
+}
+
+.footer{
+    
+    width: 100%;
+    height: 50vh;
+    outline: #6500ff 1px solid;
+    background: #19191a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .contact{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-content: start;
+    flex-direction: column;
+    
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    
+}
+.footer .contact h1{
+    color: whitesmoke;
+    font-size: 2.4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10%;
+    margin-left: 5%;
+    text-align: center;
+}
+.footer .contact input{
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 18%;
+    margin: 45px 0 0px 2%;
+}
+
+.footer .bio{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    
+    grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+.footer .bio .border{
+    outline: #6500ff 2px solid;
+    position: relative;
+    background: #c0c0c0;
+    width: 15rem;
+    border-radius: 25px;
+    top: 15rem;
+    
+}
+.footer .bio .border:hover{
+    background: #6500ff;
+    transition: 2s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.footer .bio img{
+    
+    grid-row: 5/6;
+    position: absolute;
+    top: 22%;
+    height: 50%;
+    color: whitesmoke;
+
+}
+
+.footer .bio #i1:hover{
+    scale: 1.3;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.footer .bio #i2:hover{
+    scale: 1.3;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.footer .bio #i3:hover{
+    scale: 1.3;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+.footer .bio #i1{
+    margin-left: 20%;
+}
+.footer .bio #i2{
+    margin-left: 40%;
+}
+.footer .bio #i3{
+    margin-left: 60%;
+}
+
+.footer .contact button {
+  --😀: #644dff;
+  --😀😀: #4836bb;
+  --😀😀😀: #654dff63;
+  cursor: pointer;
+  width: 184px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 7%;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.footer .contact button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+/* 
+RESPONSIVE  */
+@media screen and (max-width:786px){
+ /* /STYLE/ */
+.Header {
+    display: fixed;
+    overflow: none;
+    align-items: start;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 60%;
+    top: -2px;
+    left: 22%;
+    height: 5vh;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.Header .AnimatedBar {
+    width: 5rem;
+    height: 60px;
+
+    position: absolute;
+    right: 74rem;
+    top: 2rem;
+}
+
+/* EXTRA */
+.AnimatedBar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.animeLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 50px;
+}
+
+.animeLines div {
+    width: 100%;
+    height: 6px;
+    background-color: turquoise;
+    color: #ff0000;
+    /* Adjust color as needed */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.AnimatedBar:hover .line1 {
+    transform: translateY(-5px) rotate(-0deg);
+    background-color: #007BFF;
+    /* Adjust hover color */
+}
+
+.AnimatedBar:hover .line2 {
+    opacity: 0;
+    /* Hide the middle line */
+}
+
+.AnimatedBar:hover .line3 {
+    transform: translateY(10px) rotate(0deg);
+    background-color: #007BFF;
+    /* Adjust hover color */
+}
+
+/* ...existing code... */
+/* EXTRA END */
+.Header .AnimatedBar .line1 {
+    width: 55%;
+    height: 0.3vmax;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .AnimatedBar .line2 {
+    width: 70%;
+    margin-top: 5px;
+    height: 0.4vmax;
+    margin-left: 2px;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .AnimatedBar .line3 {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 12px;
+    height: 0.3vmax;
+    background: white;
+    border-radius: 360px;
+}
+
+.Header .NavLink a:hover {
+    text-shadow: 0px 0px 2px rgb(140, 0, 255);
+
+}
+
+.Header .NavLink {
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Header .NavLink a {
+    font-size: 1vmax;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15%;
+
+}
+
+.Header h1 {
+    margin-left: 12px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 50px 10px 50px;
+
+    text-align: start;
+    align-items: center;
+    font-size: 2vmax;
+    width: 100%;
+    border-radius: 1px;
+
+
+}
+
+.page1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+    overflow-x: hidden;
+
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    background: linear-gradient(to right, #333 30%, #c0c0c0 70%);
+    background: conic-gradient(from 90deg at center, #000000, #333 30%, #000 70%);
+    background-image: none;
+    /* background: #000000;
+    background: linear-gradient(120deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 72%); */
+    z-index: -100;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.Glass {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(100px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: -2;
+    position: absolute;
+    mix-blend-mode: overlay;
+
+}
+
+.page1 .circle {
+    display: none;
+}
+
+.page1 .circle .InnerCircle {
+    width: 40%;
+    height: 40%;
+    outline: 2px #fafafa solid;
+    position: absolute;
+    top: 35px;
+    left: 6px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    margin-top: -30px;
+
+}
+
+.page1 .circle .InnerCircle:hover {
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: all 0.3s ease-in-out;
+    box-shadow: -0px 0px 10px rgb(255, 0, 0);
+}
+
+.page1 .AnimeLine {
+    width: 4px;
+    height: 10vh;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: -0px 0px 10px rgb(255, 255, 255);
+
+}
+
+.page1 .page1-content {
+    display: flex;
+    gap: -200px;
+    width: 100%;
+    
+    height: 40%;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: -10px;
+}
+
+.page1 .page1-content :nth-child(3) {
+    color: rebeccapurple;
+    outline: none;
+    margin-left: 20px;
+    -webkit-text-stroke: none;
+    cursor: pointer;
+}
+
+.page1 h1 {
+    margin-top: 10%;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 6vmax;
+    gap: 10px;
+    font-weight: 600;
+    width: 50%;
+    display: flex;
+    -webkit-text-stroke: #000 1px;
+    text-align: center;
+    margin-top: -10%;
+    text-align: start;
+}
+
+.page1 p {
+    position: absolute;
+    left: -5rem;
+    top: 65%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fafafa;
+    font-size: 1.5vmax;
+    -webkit-text-stroke: coral 0.1px;
+    text-align: start;
+    margin-top: -65px;
+}
+
+.page1 .img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    left: 10%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+.page2 {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    background-size: cover;
+    background: #19191a;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.page1 .ListItems {
+    width: 85%;
+    height: 15%;
+    position: absolute;
+    top: 80%;
+    left: 6%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    background: #fafafc1c;
+    border-radius: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 20px 40px rgba(255, 255, 255, 0.308);
+    z-index: 100;
+}
+
+.page2 .cards {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: absolute;
+    top: 80%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    right: -4%;
+    
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.page2 .cards .insideCards {
+    
+    width: 90%;
+    height: 70%;
+    justify-content: space-evenly;
+    transform-style: preserve-3d;
+    perspective: -1000px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: .15s ease-out;
+}
+
+.page2 .cards .insideCards .card1 {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    background: rgb(27, 27, 27);
+}
+
+.page2 .cards .insideCards .card2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    background: rgb(27, 27, 27);
+}
+
+.page2 .cards .insideCards .card3 {
+    width: 100%;
+    margin-top: 50px;
+    height: 100%;
+    background: rgb(27, 27, 27);
+}
+.page2 .cards .insideCards .card3 h1:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    color: whitesmoke;
+    filter: drop-shadow(10px 4px 4px  #022436);
+}
+.page2 .cards .insideCards .card1 h1:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    color: whitesmoke;
+    filter: drop-shadow(-10px 4px 4px  #022436);
+}
+.page2 .cards .insideCards .card3 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    background: white;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+}
+.page2 .cards .insideCards .card2 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 1);
+    color: black;
+    background: white;
+    width: 100%;
+    filter: drop-shadow(-1px -10px 10px  #022436);
+}
+.page2  .insideCards .card1 h4:hover {
+    transition: .15s cubic-bezier(0.39, 0.575, 0.565, 0);
+    color: black;
+    background: white;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+}
+
+.page2 .cards .insideCards .card1:hover {
+    text-decoration: #000 1px solid;
+    display: flex;
+    transform: rotateY(10deg) translateZ(10px);
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+
+.page2 .cards .insideCards .card2:hover {
+    transform: rotateY(10deg);
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+.page2 .cards .insideCards .card3:hover {
+    background: radial-gradient(circle at 0 0, hsl(27deg 93% 60%), transparent),
+        radial-gradient(circle at 100% 0, #00a6ff, transparent),
+        radial-gradient(circle at 0 100%, #ff0056, transparent),
+        radial-gradient(circle at 100% 100%, #6500ff, transparent);
+    transform: rotateY(-10deg);
+    box-shadow: 0 15px 55px hsl(251, 45%, 60%), inset 0 0 10px hsl(219, 93%, 60%);
+}
+
+.page2 .cards .insideCards .card1,
+.card2,
+.card3 {
+    outline: 2px solid #1a035a;
+    box-shadow: 0 0 10px #6200ff77, inset 0 0 10px #6f00ff77;
+    left: 1%;
+    top: 20%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.7s ease;
+
+}
+
+@keyframes lighting {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.page2 .overView {
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+
+
+}
+.card3{
+display: grid;
+position: relative;
+    grid-template-rows: 5rem 1fr 1fr 1fr 1rem;
+    justify-content: center;
+}
+.card1 {
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr 1fr 1rem;
+    justify-content: center;
+}
+.page2 .cards .insideCards .card3 h1{
+    font-size: 2vmax;
+    position: absolute;
+    text-align: center;
+    color:rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    
+    height: 100vh;
+    grid-row: 1;
+}
+
+.page2 .cards .insideCards .card1 {
+    position: relative;
+}
+.page2 .icon {
+    opacity: 1;
+    width: 100%;
+    height: 25%;
+    color: whitesmoke;
+    position: absolute;
+    top: 20%;
+    filter: drop-shadow(-1px 10px 10px  #022436);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2s ease-in-out;
+    left: 0;
+    z-index: -1;
+}
+.page2 .cards .insideCards .card1 h1{
+    font-size: 2vmax;
+    text-align: center;
+    grid-row: 1;
+     
+    z-index: 1;
+    align-items: center;
+    color:rebeccapurple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.page2 .cards .insideCards .card2 h4{
+    font-size: 1.5vmax;
+    width: 100%;
+    text-align: center;
+    top: 78%;
+    border-radius: 15px;
+    height: 15%;
+    color: rebeccapurple;
+    background: #000;
+    position: absolute;
+    background: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    z-index: -1;
+}
+.page2 .cards .insideCards h4{
+    font-size: 1vmax;
+    width: 100%;
+    text-align: center;
+    top: 82%;
+    height: 5%;
+    position: absolute;
+    z-index: 1;
+    color: #fafafc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    z-index: -1;
+}
+.page2 .overView .insideView {
+
+    width: 100%;
+    
+    text-align: start;
+    position: relative;
+    top: 5rem;
+
+}
+
+.page2 .overView h5 {
+    font-size: 2vmax;
+    color: whitesmoke;
+    justify-content: center;
+    padding-left: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    margin-top: -1rem;
+}
+
+.page2 .overView h1 {
+    color: whitesmoke;
+    padding-left: 2rem;
+    font-size: 4vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+}
+
+.page2 .overView p {
+    padding-left: 2.5rem;
+    margin-top: 2rem;
+    color: #fafafc1c;
+    font-size: 1.3vmax;
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page2 .overView p:hover {
+    color: white;
+    text-shadow: 5px 20px 40px rgba(255, 255, 255, 0.308);
+}
+
+.page2 .tubelight {
+    width: 99%;
+    height: 5px;
+    background: #fafafa;
+    position: absolute;
+    margin-top: 92%;
+
+}
+
+.page2 .tubelight h1 {
+    color: #fafafa;
+    font-size: 4vmax;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1.5rem;
+}
+
+.page3 {
+    width: 100%;
+    height: 100vh;
+    background: #19191a ;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+.page3 .logos{
+    width: 90%;
+    height: 20vh;
+    border-radius: 12px;
+    outline: 2px solid #6500ff;
+    
+}
+.page3 .work{
+    width: 100%;
+    height: 60%;
+    margin-top: 0%;
+    
+}
+.page3 h1{
+    color: whitesmoke;
+    font-size: 2.4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+    
+}
+.page3 .projects{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page3 .projects .project1,.project2,.project3{
+    width: 90%;
+    margin: 10px;
+    height: 50%;
+    outline: #6500ff solid 2px;
+    border-radius: 10px;
+    background: #333;
+    
+}   
+.page3 .projects .project1.headline{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmax;
+    color: whitesmoke;
+    background: #c0c0c0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.page3 .projects .project1.headlines a{
+    text-align: center;
+}
+.footer .contact{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footer .contact input{
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    height: 15%;
+    margin: 45px 0 0px 2%;
+}
+.footer .bio{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 5rem 1fr 1fr 1fr 1fr 1fr;
+    background: red;
+}
+}
