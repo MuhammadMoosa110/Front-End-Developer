@@ -5,17 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "nrCxIqG7NGnucoPvL",
-            });
-        })();
-    </script>
-
     <title>MUHAMMAD MOOSA</title>
 </head>
 
@@ -26,43 +15,44 @@
             <div class="Header">
                 <!-- Animated Nav When I click Icon Bar will Show -->
 
-                <a href="#">
-                    <div class="AnimatedBar">
-                        <div class="animeLines">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                        </div>
 
+                <div class="AnimeBar">
+                    <div class="animeLines">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
                     </div>
-                </a>
+
+                </div>
+
                 <!-- <h1>MUHAMMAD MOOSA</h1> -->
                 <div class="NavLink">
                     <a href="#">ABOUT</a>
-                    <a href="#work">WORK</a>
+                    <a href="work.html" target="_blank">WORK</a>
                     <a href="#contact">CONTACT</a>
                 </div>
             </div>
             <!-- HEADER & ADJ END -->
             <div class="page1" id="page1">
                 <div class="img">
-                    <img src="Assets/bg.jpg" />
+                    <!-- <img src="Assets/bg.jpg" /> -->
                 </div>
-                <div class="circle">
+                <!-- <div class="circle">
                     <div class="InnerCircle"></div>
                     <div class="AnimeLine"></div>
-                </div>
+                </div> -->
                 <div class="page1-content">
 
 
-                    <h1><b> Hi,</b> </h1>
-                    <h1>I`m</h1>
+                    <h2>Hi</h2>
+                    <h2 id="i">I</h2>
+                    <h2 id="h2">`m</h2>
                     <h1 class="name">Moosa</h1>
-
+                    <p id="para">This is a showcase of my work and skills.</p>
 
                 </div>
-                <p id="para">This is a showcase of my work and skills.</p>
-                <div class="Glass"></div>
+
+                <!-- <div class="Glass"></div> -->
 
             </div>
             <div class="page2">
@@ -78,8 +68,16 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="tubelight">
+                <div class="logos">
+                    <img class="i1" src="Assets/html.png" />
+                    <img class="i2" src="Assets/css-3.png" />
+                    <img class="i3" src="Assets/js.png" />
+                    <img class="i4" src="Assets/node-js.png" />
+                    <img class="i5" src="Assets/physics.png" />
+                </div>
+            </div>
+            <div class="page3">
+                <div class="light">
                     <h1>Testimonial</h1>
                 </div>
                 <div class="cards">
@@ -109,65 +107,102 @@
                             <h4>ONLINE CLIENT</h4>
                         </div>
 
-                        <cards></cards>
+
                     </div>
                 </div>
             </div>
-            <div class="page3">
-                <div class="logos">
-                    <img class="i1" src="Assets/html.png" />
-                    <img class="i2" src="Assets/css-3.png" />
-                    <img class="i3" src="Assets/js.png" />
-                    <img class="i4" src="Assets/node-js.png" />
-                    <img class="i5" src="Assets/physics.png" />
-                </div>
+
+            <div class="page4">
                 <h1>WORK</h1>
-                <div class="work" id="work">
-                    <div class="projects">
-                        <div class="project1">
-                            <a>WILL UPLOAD NEXT WEEK</a>
+                <div class="projects">
+                    <div class="prjOne">
+                        <div class="content">
+                            <h1>JD CONSTRUCTION</h1>
+                            <h5>VISIT LINK :</h5><a href="https://muhammadmoosa110.github.io/JD-/" target="_blank">JD
+                                CONSTRUCTION</a>
+                            <br>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio enim dignissimos
+                                dolorem inventore mollitia vitae officia ab iusto iste illum aliquam aperiam laudantium
+                                fugit soluta quod, totam facere laboriosam in cumque eos. Suscipit debitis quod odio.
+                                Dolore totam natus, omnis, unde quos ipsa tempora, optio magni magnam odio ex.</p>
+                            <div class="contentImg"><img src="Assets/Capture.PNG"></div>
+
                         </div>
-                        <div class="project2">
-                            <a>WILL UPLOAD NEXT WEEK</a>
+                        <div class="circle" id="c"></div>
+                        <div class="line" id="l"></div>
+                        <div class="line2" id="l"></div>
+                    </div>
+
+                    <div class="prjTwo">
+                        <div class="circle" id="c2"></div>
+                        <div class="line2" id="l2"></div>
+                        <div class="content">
+                            <h1>VYNTRIX MARKETING</h1>
+                            <h5>VISIT LINK :</h5><a href="https://vyntrix-marketing.vercel.app" target="_blank">VYNTRIX
+                                MARKETING</a>
+                            <br>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio enim dignissimos
+                                dolorem inventore mollitia vitae officia ab iusto iste illum aliquam aperiam laudantium
+                                fugit soluta quod, totam facere laboriosam in cumque eos. Suscipit debitis quod odio.
+                                Dolore totam natus, omnis, unde quos ipsa tempora, optio magni magnam odio ex.</p>
+                            <div class="contentImg"><img src="Assets/Capture.PNG"></div>
+
                         </div>
-                        <div class="project3">
-                            <img src="Assets/Capture.PNG" />
-                            <a href="https://muhammadmoosa110.github.io/JD-/" target="_blank">WEB IN PROGRESS</a>
-                        </div>
+
                     </div>
 
                 </div>
+
             </div>
-            <div class="lamp"></div>
-            <div class="footer">
-                <div class="contact" id="contact">
-                    <h1> CONTACT</h1>
-                    <div class="input">
-                        
-                            <input id="agha" placeholder="name" type="name">
-                            <input id="agha" placeholder="E-mail" type="email">
-                            <input placeholder="Your Text" type="text">
-                            <button type="submit" onclick='sendMain()'>SUBMIT</button>
-                        
+            <div class="Mobileprojects">
+                <h1 id="h1">Projects</h1>
+                <div class="mobileProOne">
+                    <a style="margin-left: 130px;">VYNTRIX</a>
+                    <div class="StyleCircle" id="sc1">
+                        <div class="StyleCircleInside" id="sc1"></div>
                     </div>
+
+
                 </div>
-                <div class="bio">
-                    <div class="border" id="border">
-                        <a href="https://www.behance.net/muhammadmoosa18" target="_blank"><img src="Assets/behance.png" id="i1"></a>
-                        <a href="https://www.instagram.net/turab_agha" target="_blank"><img src="Assets/instagram.png" id="i2"></a>
-                        <a href="#" target="_blank"><img src="Assets/facebook.png" id="i3"></a>
-                    </div>
+                <div class="mobileProTwo">
+                    <div class="StyleCircle2" id="sc2"></div>
+                    <a>VYNTRIX</a>
+                </div>
+                <div class="mobileProThree">
+                    <div class="StyleCircle" id="sc1"></div>
+                    <a>VYNTRIX</a>
+                </div>
+                <!-- FOOTER -->
+                <div class="footer">
+
+                
+                <div class="footerContent" >
+                    <h2 style="color: whitesmoke;margin: 45px;text-align: center;">CONTACT</h2>
+                    <div class="FooterInputs">
+                    <input style="width: 80%;height: 50px;border-radius: 12px;text-align: center;margin: 10px; " placeholder="NAME"/>
+                    <input style="width: 80%;height: 50px;border-radius: 12px;text-align: center;margin: 10px; " placeholder="NAME"/>
+                    <input style="width: 80%;height: 50px;border-radius: 12px;text-align: center;margin: 10px; " placeholder="NAME"/>
+                    <input style="width: 80%;height: 50px;border-radius: 12px;text-align: center;margin: 10px; " placeholder="NAME"/>
+                     </div>   
+                </div>
+                <div class="footerIcons" style="display: flex;gap: 15px;">
+                    <img src="Assets/behance.png" style=" width: 60px;height: 60px;" alt="">
+                    <img src="Assets/instagram.png" style=" width: 60px;height: 60px;" alt="">
+                    <img src="Assets/facebook.png" style=" width: 60px;height: 60px;" alt="">
+                </div>
                 </div>
             </div>
+
         </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
-        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="style.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+            integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+            integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="style.js" defer></script>
 </body>
 
 </html>
