@@ -930,19 +930,52 @@ RESPONSIVE  */
 }
 .footer{
     box-shadow: 0px -4px 10px #000;
-    top: 470%;
+    top: 450%;
     position: relative;
-    z-index: 1000;
+    z-index: 100;
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+.footer .footerContent{
+    align-content: center;
+    justify-items: center;
+    position: absolute;
+    top: -0%;
+}
+.footer .footerContent .FooterInputs{
+    width: 80%;
+    left: 80%;
+    position: absolute;
+    top: 20%;
+}
+.footer .footerContent button{
+    background: #A67f59;
+    width: 35%;
+    position: absolute;
+    top: 95%;
+    right: 40%;
+    border-radius: 22px;
+    
+    height: 40px;
+}
+.footer .footerContent button:hover{
+    background: #c0c0c0;
+    color: #F5E8D8;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) all 2s;
+    transform: translateY(10%);
+    color: #000;
+}
+.footer .footerContent input{
+    top: -40%;
+    background: #F5E8D8;
 }
 .footer h2{
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .footer .footerIcons{
-    top: 40%;
+    top: 70%;
     position: absolute;
 }
 .Mobileprojects h1{
@@ -966,9 +999,10 @@ RESPONSIVE  */
     align-items: center;
     justify-items: center;
    justify-content: center;
-   background: #A67f59;
+   background: #F5E8D8;
    position: absolute;
    top: 300%;
+   z-index: 100;
 }
 .Mobileprojects .mobileProOne .StyleCircle .StyleCircleInside{
     width: 30px;
@@ -998,13 +1032,13 @@ RESPONSIVE  */
 .Mobileprojects .mobileProOne{
     width: 90%;
     height: 50%;
-    top: 25%;
+    top: 23%;
     left: 5%;
     z-index: 100;
     border-radius: 10px;
     align-content: center;
     justify-items: center;
-    background: #6e0606;
+    background: #F5E8D8;
     position: absolute;
     box-shadow: 0px 10px 10px #000;
 }
